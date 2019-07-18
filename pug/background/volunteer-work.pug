@@ -1,8 +1,8 @@
 unless _.isEmpty(resume.volunteer)
   .detail#volunteer-work
-    +large_icon('child', 'Volunteer Work')
+    +large_icon('child', 'Ehrenamtliche Tätigkeiten')
     .info
-      h4.title.text-uppercase Volunteer Work
+      h4.title.text-uppercase Ehrenamtliche Tätigkeiten
 
       .content
         ul.list-unstyled.clear-margin
@@ -10,7 +10,7 @@ unless _.isEmpty(resume.volunteer)
             li.card.card-nested
               .content
                 p.clear-margin.relative
-                  +timed_event_title(volunteer_info.position, !volunteer_info.endDate, 'Currently Volunteering Here')
+                  +timed_event_title(volunteer_info.position, !volunteer_info.endDate, 'Derzeit')
                   |,&nbsp;
                   if volunteer_info.website
                     a(href=volunteer_info.website, target="_blank")= volunteer_info.organization
@@ -19,7 +19,7 @@ unless _.isEmpty(resume.volunteer)
 
                 p.text-muted
                   small
-                    |#{volunteer_info.startDate} - #{volunteer_info.endDate || 'Present'}
+                    |#{volunteer_info.startDate} - #{volunteer_info.endDate || 'Heute'}
 
                 .mop-wrapper!= volunteer_info.summary
 

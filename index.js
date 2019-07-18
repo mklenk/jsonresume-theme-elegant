@@ -29,27 +29,27 @@ function floatingNavItems(resume) {
     var items
     if (resume.basics.priority == 'research')
       items = [
-          {label: 'About', target: 'about', icon: 'board', requires: 'basics.summary'},
-          {label: 'Publications', target: 'publications', icon: 'newspaper', requires: 'publications'},
-          {label: 'Awards', target: 'awards', icon: 'trophy', requires: 'awards'},
-          {label: 'Education', target: 'education', icon: 'graduation-cap', requires: 'education'},
-          {label: 'References', target: 'references', icon: 'thumbs-up', requires: 'references'},
-          {label: 'Work Experience', target: 'work-experience', icon: 'office', requires: 'work'},
-          {label: 'Volunteer Work', target: 'volunteer-work', icon: 'child', requires: 'volunteer'},
+          {label: 'Über mich', target: 'about', icon: 'board', requires: 'basics.summary'},
+          {label: 'Veröffentlichungen', target: 'publications', icon: 'newspaper', requires: 'publications'},
+          {label: 'Auszeichungen', target: 'awards', icon: 'trophy', requires: 'awards'},
+          {label: 'Ausbildung', target: 'education', icon: 'graduation-cap', requires: 'education'},
+          {label: 'Referenzen', target: 'references', icon: 'thumbs-up', requires: 'references'},
+          {label: 'Berufserfahrung', target: 'work-experience', icon: 'office', requires: 'work'},
+          {label: 'Ehrenamtliche Tätigkeiten', target: 'volunteer-work', icon: 'child', requires: 'volunteer'},
           {label: 'Skills', target: 'skills', icon: 'tools', requires: 'skills'},
-          {label: 'Interests', target: 'interests', icon: 'heart', requires: 'interests'}
+          {label: 'Interessen', target: 'interests', icon: 'heart', requires: 'interests'}
       ]
     else
       items = [
-          {label: 'About', target: 'about', icon: 'board', requires: 'basics.summary'},
-          {label: 'Work Experience', target: 'work-experience', icon: 'office', requires: 'work'},
-          {label: 'Volunteer Work', target: 'volunteer-work', icon: 'child', requires: 'volunteer'},
-          {label: 'Publications', target: 'publications', icon: 'newspaper', requires: 'publications'},
-          {label: 'Awards', target: 'awards', icon: 'trophy', requires: 'awards'},
-          {label: 'Education', target: 'education', icon: 'graduation-cap', requires: 'education'},
-          {label: 'References', target: 'references', icon: 'thumbs-up', requires: 'references'},
+          {label: 'Über mich', target: 'about', icon: 'board', requires: 'basics.summary'},
+          {label: 'Berufserfahrung', target: 'work-experience', icon: 'office', requires: 'work'},
+          {label: 'Ehrenamtliche Tätigkeiten', target: 'volunteer-work', icon: 'child', requires: 'volunteer'},
+          {label: 'Veröffentlichungen', target: 'publications', icon: 'newspaper', requires: 'publications'},
+          {label: 'Auszeichungen', target: 'awards', icon: 'trophy', requires: 'awards'},
+          {label: 'Ausbildung', target: 'education', icon: 'graduation-cap', requires: 'education'},
+          {label: 'Referenzen', target: 'references', icon: 'thumbs-up', requires: 'references'},
           {label: 'Skills', target: 'skills', icon: 'tools', requires: 'skills'},
-          {label: 'Interests', target: 'interests', icon: 'heart', requires: 'interests'}
+          {label: 'Interessen', target: 'interests', icon: 'heart', requires: 'interests'}
       ]
 
     return _.filter(items, item => !_.isEmpty(interpolate(resume, item.requires)))

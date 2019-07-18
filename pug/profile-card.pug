@@ -11,7 +11,7 @@ mixin profile_card_detail(icon, info, itemprop, icon_title)
 
 mixin social_links(profiles)
   each profile in profiles
-    a.social-link(title=resume.basics.name + " on " + profile.network, href=profile.url, target="_blank", data-toggle="tooltip")
+    a.social-link(title=resume.basics.name + " auf " + profile.network, href=profile.url, target="_blank", data-toggle="tooltip")
       svg.icon(class="icon-" + profile.label, title='')
         use(xlink:href="#icon-" + profile.label)
       span.info.print=profile.url

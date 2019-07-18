@@ -1,8 +1,8 @@
 unless _.isEmpty(resume.education)
   .detail#education
-    +large_icon('graduation-cap', 'Education')
+    +large_icon('graduation-cap', 'Ausbildung')
     .info
-      h4.title.text-uppercase Education
+      h4.title.text-uppercase Ausbildung
 
       .content
         ul.list-unstyled.clear-margin
@@ -10,12 +10,12 @@ unless _.isEmpty(resume.education)
             li.card.card-nested
               .content
                 p.clear-margin.relative
-                  +timed_event_title(education_info.area + ', ' + education_info.studyType + ', ', !education_info.endDate, 'Currently Pursuing')
+                  +timed_event_title(education_info.area + ', ' + education_info.studyType + ', ', !education_info.endDate, 'Derzeit')
                   |#{education_info.institution}
 
                 p.text-muted(class=!education_info.gpa && _.isEmpty(education_info.courses) ? 'clear-margin' : '')
                   small
-                    |#{education_info.startDate} - #{education_info.endDate || 'Present'}
+                    |#{education_info.startDate} - #{education_info.endDate || 'Heute'}
                 i= education_info.gpa
 
                 unless _.isEmpty(education_info.courses)

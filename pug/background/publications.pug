@@ -1,9 +1,9 @@
 
 unless _.isEmpty(resume.publications)
   .detail#publications
-    +large_icon('newspaper', 'Publications')
+    +large_icon('newspaper', 'Veröffentlichungen')
     .info
-      h4.title.text-uppercase Publications
+      h4.title.text-uppercase Veröffentlichungen
 
       .content
         ul.list-unstyled.clear-margin
@@ -21,7 +21,7 @@ unless _.isEmpty(resume.publications)
 
                 p.text-muted
                   if publication.releaseDate
-                    small= 'Published on: ' + publication.releaseDate
+                    small= 'Veröffentlich am: ' + publication.releaseDate
                   else
                     small= 'TBA'
 

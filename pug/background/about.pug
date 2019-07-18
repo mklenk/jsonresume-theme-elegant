@@ -1,8 +1,8 @@
 unless _.isEmpty(resume.basics.summary)
   .detail#about
-    +large_icon('board', 'About')
+    +large_icon('board', 'Über mich')
     .info
-      h4.title.text-uppercase About
+      h4.title.text-uppercase Über mich
 
       .card.card-nested
         .content.mop-wrapper(itemprop="description")!= resume.basics.summary
