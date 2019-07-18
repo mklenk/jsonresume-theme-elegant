@@ -19,15 +19,6 @@ Personal modification of the [Elegant](https://github.com/mudassir0909/jsonresum
   * Reworked the print design. (*maximum features, no print color waste*)
 * Added continuous integration (*using Travis CI*)
 
-## Command Line Interface
-Jali Elegent Theme provides a basic command line tool as well. This will render the given .json file into the given file name on the same directory:
-
-    jaliresume myfolder/myresume.json outputname.html
-    jaliresume myfolder/myresume.json outputname.pdf
-
-Both input path and output name are optional parameters.
-
-
 ### Extended Schema
 An additional optional entry called `basics.priority` allows you to reorder entries in the file:
 
